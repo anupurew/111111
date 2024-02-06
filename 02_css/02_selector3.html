@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>가상 요소 선택자 가상 클래스 선택자</title>
+    <!-- 가상 클래스 선택자는 :hower, :active, :focus  -->
+    <!-- 가상 클래스  선택자는 :first-child, last-child, nth-child  -->
+    <style>
+      .div1 {
+        width: 100px;
+        height: 100px;
+        text-align: center;
+        background-color: skyblue;
+      }
+
+      /* 1. 가상 클래스 ㅡ선택자 */
+      /* :hover, :active, visited, focus */
+      /* 
+      -  E hover {} - E 요소에 마우스가 올라가 있는 동안 E 선택
+      - E active{} -> E 요소에 마우스 클릭 또는 키보드 엔터가 놀린 동안 E 선택 
+      - E focus{} -> E 요소에 포커스가 머몰러 있는 동안 E 선택
+      E visited{} -> E 요소에 링크일 때 한번 클릭 해서 해당 링크에 들어갔다가 나왔을 때 
+      - E chacked -. E 요소에      */
+      /* hover */
+      .div1:hover {
+        background-color: aqua;
+        height: 150px;
+      }
+      /* active */
+      .div1:active {
+        background-color: pink;
+        width: 150px;
+      }
+      /* focus */
+      input:focus {
+        background-color: cornflowerblue;
+        width: 50px;
+        outline-color: violet;
+      }
+      /*  active */
+      .links > a {
+        font-size: 25px;
+        font-weight: 900;
+        color: black;
+        background-color: darksalmon;
+      }
+      .links > a:active {
+        color: green;
+      }
+      /* visited */
+      .links > a:visited {
+        color: red;
+      }
+      .stripes > * {
+        background-color: navy;
+        color: white;
+      }
+      .stripes > div:nth-child(2n) {
+        background-color: yellow;
+        color: black;
+      }
+    </style>
+    <!-- 가상요소 선택자  -->
+    <style>
+      .div2::before {
+        content: default "가상 선택자로 입력한 텍스트";
+        color: white;
+      }
+      .div2:hover::before {
+        content: "얍!";
+      }
+      .div2::after {
+        content: "";
+      }
+    </style>
+  </head>
+  <body>
+    <hr />
+    <div class="div1">
+      <span>div1</span>
+    </div>
+
+    <input type="text" />
+    <div class="links">
+      <a href="https://www.naver.com" target="_blank">네이버</a>
+      <a href="https://www.goolge" target="_blank">구글 </a>
+    </div>
+    <hr />
+    <ul class="zoo">
+      <h1>새싹 동물원</h1>
+      <h1></h1>
+    </ul>
+
+    <div class="stripes">
+      <div>navy</div>
+      <div>yellow</div>
+      <div>navy</div>
+      <div>navy</div>
+      <div>navy</div>
+      <div>yellow</div>
+      <div>navy</div>
+      <div>navy</div>
+      <div>navy</div>
+      <div>yellow</div>
+      <div>navy</div>
+    </div>
+    <hr />
+    <div2 class="가상 요소 선택자"> </div2>
+  </body>
+</html>

@@ -1,0 +1,9 @@
+* {
+  color: blue;
+}
+li {
+  background-color: aqua;
+}
+/* class 선택자  */
+/* html 내애서 해당 class 를 가진 요소 */
+/* 클래스명 { 속성: 속성값 )*/
