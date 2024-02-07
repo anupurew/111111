@@ -1,0 +1,82 @@
+/* 구글 폰트 : link 태그 , font-family 를 사용한 웹 폰트  */
+.google {
+  font-family: "Single Day", "Gothic A1", sans-serif;
+}
+/* noonnu 는 font-face, font- family 속성을 사용해 웹 폰트 적용 */
+@font-face {
+  font-family: "seolleimcool-SemiBold";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2312-1@1.1/seolleimcool-SemiBold.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+.noonnu {
+  font-family: "seolleimcool-SemiBold", sans-serif;
+}
+.sentence {
+  font-weight: 700;
+  /* 글씨채마다 제공되는 font-weight 값이 제각각이기 때문에 모든 값이 적용되지 않음  */
+  font-size: 1rem;
+  text-align: center;
+  text-decoration: line-through;
+  text-decoration: underline;
+
+  line-height: 1;
+  line-height: 100%;
+}
+.line-height {
+  /* px 값 지장 시 한 줄의 높이가  */
+  line-height: 50px;
+  color: pink;
+}
+/* opacity 투명도 (0-1) 사이  */
+/*  선택된 요소의 컨텐트응 모두 투명도 적응시킴 -> 글자도 덕용됨  */
+.opacity {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+}
+.opacity-20 {
+  opacity: 0.2;
+}
+.opacity-80 {
+  opacity: 0.8;
+}
+.opacity-1 {
+  opacity: 1;
+}
+/* 요소를 숨기는 방법  */
+.square {
+  width: 100px;
+  height: 100px;
+  border: 1px solid;
+  display: inline-block;
+}
+.d-none {
+  /* display: none; */
+  background-color: red;
+}
+.invisible {
+  /* visibility: hidden; */
+  background-color: orangered;
+}
+.opacity-0 {
+  /* opacity: 0; */
+  background-color: tomato;
+}
+.text-container {
+  width: 70vw;
+  height: 300px;
+}
+.overflow-auto {
+  overflow: auto;
+}
+.overflow-hidden {
+  overflow: hidden;
+}
+.overflow-scroll {
+  overflow: scroll;
+}
+.overflow-vivible {
+  overflow: vivible;
+}

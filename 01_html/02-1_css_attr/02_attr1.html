@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS 속성 1</title>
+    <link rel="stylesheet" href="./01_attr1.css" />
+  </head>
+  <body>
+    <h2>크기 단위</h2>
+
+    <div class="px">100px</div>
+
+    <div class="em-text">
+      em-> 32px
+
+      <div class="em-text">
+        1em->은 32px이 됨 em-> 64px em
+        <div class="em-text">em</div>
+      </div>
+    </div>
+
+    <div class="rem-text">
+      rem
+      <div class="rem-text">
+        rem
+        <div class="rem-text">rem</div>
+      </div>
+    </div>
+    <div class="em">10em</div>
+    <div class="em-parents">
+      em 부모 요소 font-size: 10px
+      <div class="em">10em</div>
+    </div>
+
+    <div class="rem">10rem</div>
+    <div class="rem-parents">
+      rem 부모 요소 font-size: 30px
+      <div class="rem">10rem</div>
+    </div>
+    <div class="percent-parents">
+      % 보무요소 300px
+      <div class="percent">50%</div>
+    </div>
+
+    <div class="vh">30vh</div>
+    <div class="vw">30vw</div>
+    <br />
+    <hr />
+    <h2>display 속성</h2>
+    <div class="d-block">block 1</div>
+    <div class="d-block">block 2</div>
+    <div class="d-block">block 3</div>
+    <div class="d-block">block 4</div>
+    <br /><br />
+    <span class="d-inline">inline 1</span>
+    <span class="d-inline">inline 2</span>
+    <span class="d-inline">inline 3</span>
+    <span class="d-inline">inline 4</span>
+    <br /><br />
+    <span class="d-inline-block">inline 1</span>
+    <span class="d-inline-block">inline 2</span>
+    <span class="d-inline-block">inline 3</span>
+    <span class="d-inline-block">inline 4</span>
+    <br />
+
+    <h3>박스 모델 사용하기 실습</h3>
+    <div class="container">
+      <div class="html">HTML</div>
+      <div class="css">CSS</div>
+      <div class="javascript">javascript</div>
+    </div>
+    <br />
+    <hr />
+    <h2>max-width, min-width</h2>
+    <div class="parent">
+      <div class="max"></div>
+      <div class="min"></div>
+    </div>
+    <br />
+    <div class="header">header</div>
+    <div class="calc 사용하기">calc() 사용하기</div>
+    <br />
+    <hr />
+
+    <h2>border, border-radious</h2>
+    <div class="square border">border</div>
+    <button class="square rounded">rounded</button>
+    <br />
+    <hr />
+    <h2>box-sizing</h2>
+    <div class="box-sizing">content-box</div>
+    <div class="box-sizing">border-box</div>
+  </body>
+</html>
