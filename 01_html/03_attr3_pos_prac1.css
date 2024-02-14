@@ -1,0 +1,30 @@
+body {
+  background-color: aliceblue;
+  margin: 0;
+  padding: 0;
+}
+.product-info {
+  margin: 0;
+  padding: 0;
+  height: 200px;
+}
+.fixed-tab {
+  background-color: lightcoral;
+  position: stucky;
+  font-weight: 200;
+  text-align: center;
+  line-height: 100px;
+}
+
+.top-btn {
+  font-weight: 700;
+  text-align: center;
+  line-height: 100px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 100px;
+  height: 100px;
+  background-color: aquamarine;
+  border-radius: 30px;
+}
