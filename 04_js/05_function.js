@@ -1,3 +1,26 @@
+/*
+함수 
+ - 특정 작업을 수행하기 위해 독립적으로 설계된 코드 집함
+ -함수 정의 -> 함수 호출
+ - 함수 정의 / 선언
+   - keyword: function
+   -name: 함수 이름 (camlCase로 많이 작성)
+   -parameter: 함수 선언 시 매개변수로 받을 것
+   -parameter, arguments, 인자, 매개변수 모두 동일한 의미
+ -body: 함수 내부 코드 (Scope라고도 함)
+-함수 정의 / 선언 방식
+ - 함수 선언문 (면시적 함수 선언)
+   - function 키워드 사용
+   - ex.  function name() {}
+ -함수 표현식
+  -함수 이름 작성 -x -> 변수를 만들어 함수를 저장
+  - 참고 JS 에서는 함수가 값이기 때문에 가능한 방식
+  -ex. const funName = () => {}
+(참고) 함수 선언 vs  함수 표현식
+   - 함수 선언문functon funcName() {} 형태로 작성 / 람수 선언 전 호출 가능
+   - 함수 표현식 const funName = function() {} / 함수 선언 전 호출 
+*/
+
 helloWorld1(); // 함수 선언문으로 작성된 함수는 함수 선언 전 호출 가능
 // helloWorld2(); 함수 표현식으로 작성된 함수는 함수 선언 전 호출 불가능
 
