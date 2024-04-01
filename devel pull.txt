@@ -1,0 +1,6 @@
+git pull origin devel
+git commiit -m "feat: ........"
+git push origin feat/detailLayout
+git commit -m "fix: 추가할때
+git checkout devel
+git pull origin devel 

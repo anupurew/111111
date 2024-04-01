@@ -1,0 +1,14 @@
+git fetch
+git checkout -b devell origin/devel
+git branch -> 명령어로 devel branch 확인하기
+
+
+
+
+새롭게 만들때 ?
+git checkout -b fix
+git checkout -b feat 
+docs 문서 수정
+git pull origin devel 
+삭제 
+git branch -d fix
