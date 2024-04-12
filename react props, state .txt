@@ -1,0 +1,10 @@
+react 만들기
+npx create-react-app 풀더 이름 +enter 
+
+
+props:부모 컴포넌트에서 자식 컴포넌트에 데이터 전달 시 사용(읽기모드)
+state: useState -> 배열을 반환 [state, state의 setter 함수]
+
+  showEnglish = false -> 정상적으로 동작하지 않음
+  setShowEnglish(false) -> 리액트는 아! 지금 showEnglish라는 state의 값이 바꼈구나!
+                            나 리렌더링 해야 해!
