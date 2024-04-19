@@ -1,0 +1,13 @@
+react lifecycle 생명주기 메서드 
+클래스형 컴포넌트에 기본 기능 
+useEffect() 라는 hook사용 
+hook은 react에서 사용하는 기능 
+규칙은 최상위 단게에서만 호출 가능 
+-최상위 컴포넌트 X 
+-반복문, 조건문, 줓첩된 함수 내부에서 호출하면 안됨!
+hook은 오로지 React 함수형 컴포넌트애서만 사용할수 있음.
+컴포넌트 Mount & Update 될때 동착
+useEffect(() => {});
+useMemo 값을 저장한다. 꼭 return 값이 필요함.
+useReducer
+dispatch: state를 변경해달라고 요구 하는 함수 
