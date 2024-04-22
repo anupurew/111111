@@ -1,0 +1,8 @@
+parameter : DOMAIN/board/1
+useParams() Hook 사용해서 파라미터 객체를 얻음!
+2. useSearchParams() 를 활용하여 URL의 쿼리 데이터를 접근 , 사용
+const [queryParams, setQueryParams] = useSearchParams();
+쿼리를 가져올때는 get() 이용
+ const search = queryParams.get('search');
+
+
